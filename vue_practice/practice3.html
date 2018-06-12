@@ -1,0 +1,22 @@
+<!-- v-show指令的使用 -->
+
+<html>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <body>
+            <input type="text" v-model="message" placeholder="edit me">
+            <div id="example">
+                <p v-show="greeting">Hello</p>
+            </div>
+        </body>
+</html>
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    var example = new Vue({
+        el:"#example",
+        data:{
+            greeting:false
+        }
+    });
+</script>

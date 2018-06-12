@@ -1,0 +1,29 @@
+<!-- vue的最基本使用 -->
+
+<html>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<div id="didi-navigator">
+    <ul>
+        <li v-for="tab in tabs">
+            {{tab.text}}
+        </li>
+    </ul>
+</div>
+</html>
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    new Vue({
+        el:"#didi-navigator",
+        data:{
+            tabs:[
+                {text:'巴士'},
+                {text:'快车'},
+                {text:'顺风车'},
+                {text:'出租车'},
+                {text:'代驾'}
+            ]
+        }
+    });
+</script>
